@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>组合选择器</title>
+		<style>
+			/* 所有 */
+			*{
+				color: red;
+				/*字体格式*/
+				font-family: "楷体";
+			}
+			/* 后代选择 */
+			#secUl li{
+				color: #0000FF;
+			}
+			/* nth选择器*/
+			tr:nth-child(2n){
+				background-color: #FF4400;
+			}
+			h1{
+				color: rgba(255,0,0,0.5);
+			}
+			.gra1{
+				width: 100px;
+				height: 100px;
+				background-image: radial-gradient(red,white 60%);
+				border-radius: 50px;
+				transition: 1s linear;
+				box-shadow: 0px 0px 10px aquamarine;
+			}
+			div:hover{
+				width: 100px;
+				height: 100px;
+				background-image: radial-gradient(red 10%,white);
+			}
+		</style>
+	</head>
+	<body>
+		<p>今天天气晴朗</p>
+		<a>今天万里无云</a>
+		<h1>今天零下一度</h1>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+		<ul id="secUl">
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+		</ul>
+		<table border="1" cellspacing="0" cellpadding="10">
+			<tr><th>Header</th></tr>
+			<tr><td>1</td></tr>
+			<tr><td>2</td></tr>
+			<tr><td>3</td></tr>
+			<tr><td>4</td></tr>
+			<tr><td>5</td></tr>
+			<tr><td>6</td></tr>
+			<tr><td>7</td></tr>
+		</table>
+		
+		<h1>2020的幸福生活</h1>
+		<div class="gra1"></div>
+		<div class="gra1"></div>
+		<div class="gra1"></div>
+	</body>
+</html>

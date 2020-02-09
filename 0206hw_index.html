@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           *
+            {
+            margin:0;
+            padding:0;
+            border:0;
+            }
+            .head{
+                height: 50px;
+                width: 100%;
+                background-color: #403E72;
+            }
+            .head-nav{
+                height:50px;
+                width: 1170px;
+                margin: 0 auto;
+            }
+            .container {
+                height:50px;
+                width: 1140px;
+                margin: 0 auto;
+            }
+            .believe-title{
+                height: 93px;
+                width: 100%;
+                background-color: #FFFFFF; 
+            }
+            .believe-mid-content{
+                margin: 0 auto;
+                height: 90px;
+                width: 1170px;
+                vertical-align: middle;
+            }
+
+            .box-head{
+                height: 50px;
+                width: 100%;
+                background-color: #2B2A2F;
+            }
+            .box-img{
+                height: 600px;
+                width: 100%;
+                background-color: antiquewhite;
+            }
+            .box-img img{
+                height: 100%;
+                width: 100%;
+            }
+            .product-promotion{
+                width: 100%;
+                height: 464px;
+
+            }
+            .product-detail
+            {
+                margin: 0 auto;
+                width: 1180px;
+                height: 464px;
+                box-sizing: border-box;
+            }
+            .product-detail div{
+                margin-top:65px ;
+                float: left;
+                height: 358px;
+                width: 390px;
+                box-sizing: border-box;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .product-detail div img{
+                height: 358px;
+                width: 360px;
+            }
+            .newest{
+                width: 100%;
+                height: 1046.2px;
+                background-color: white;
+            }
+            .support{
+                width: 30%;
+                height: 50px;
+                float: left;
+            }
+            .support span{
+                line-height: 50px;
+                font-size: 13px;
+                margin-right: 20px;
+                color:white;
+                margin-left: 20px;
+            }
+			
+			.m_search{
+				width: auto;
+				height: 50px;
+				float: left;
+			}
+			input[type="search"]{
+				width: 300px;
+				line-height: 50px;
+				font-size: 13px;
+				margin-right: 20px;
+				color:white;
+				background-color: #464479;
+				text-indent: 20px;
+				margin-left: 20px;
+				display: block;
+			}
+            .control{
+                float: right;
+                width: 195px;
+                height: 50px;
+            }
+            .control li{
+                list-style-type:none;
+                display: inline-block;
+            }
+            .control li span:nth-child(2n+1){
+                line-height: 50px;
+                font-size: 14px;
+                color:#ffffff;
+                text-align: center;
+                font-weight: 100;
+                margin: 0px;
+            }
+			
+            .believe-title li{
+                list-style-type:none;
+                display: inline-block;
+            }
+
+            .leftli{
+                width: 800px;
+                float: left;
+                margin-top: 30px;
+            }
+            .leftli li img{
+                width: 112px;
+                height: 26px;
+            }
+            .leftli li{
+                vertical-align: middle;
+                margin-left: 60px;
+            }
+            .leftli li span{
+                font-weight: 700;
+                font-size: 13px;
+            }
+            .leftli li:nth-child(1)
+            {
+                margin-left: 10px;
+            }
+            .leftli li a{
+                text-decoration: none;
+                color: black;
+            }
+            .leftli li:nth-of-type(2) a
+            {
+                color: #66CEF6;
+            } 
+            .leftli li a:hover{
+                color: #66CEF6;
+            }
+            .rightli  {
+                float:right;
+                width: 210px;
+                height: 30px;
+                margin-top: 30px;
+            }
+            .rightli li img{
+                margin-left: 20px;
+                vertical-align: middle;
+            }
+
+            .rightli li a{
+                text-decoration: none;
+
+            }
+            .rightli li a span{
+                display: block;
+                height: 30px;
+                line-height: 30px;
+                font-weight: 700;
+                color: #2b2a2f;
+                font-size: 13px;
+            }
+            .box-head-mid{
+                width: 1170px;
+                height: 50px;
+                margin: 0 auto;
+            }
+            .box-head-mid a{
+				color: #DDDDDD;
+				line-height: 45px;
+                text-decoration: none;
+				font-size: 13px;
+            }
+            .box-head-mid-li{
+				border-top: 2px solid black;
+                color: #DDDDDD;
+                display: inline-block;
+                height:48px;
+                padding-left: 21px;
+                padding-right: 21px;
+				float: left;
+            }
+			.box-head-mid-li:hover{
+				border-top: 2px solid #66CEF6;
+				
+			}
+			.box-img{
+				margin: 0;
+				width: 100%;
+				height: auto;
+			}
+			.product-detail-img{
+				position: absolute;
+			}
+			.product-detail-bt{
+				font-weight: 700;
+				font-size: 15px;
+				width: 118px;
+				height: 35px;
+				background-color: rgba(0,0,0,0);
+				border: 2px solid black;
+				position: absolute;
+			}
+			.newest-top{
+				margin: 0 auto;
+				width: 312.23px;
+				height: 39.4px;
+				box-sizing: border-box;
+				margin-top:40px;
+				margin-bottom: 40px;
+			}
+			.newest-top ul{
+				box-sizing: border-box;
+			}
+			.newest-top-li{
+				list-style: none;
+				float: left;
+				line-height: 39px;
+				height: 39px;
+				font-size: 13px;
+				font-weight: 600;
+				margin-left: 9px;
+				margin-right: 9px;
+				transition: 0.5s all;
+			}
+			.newest-top-li:hover{
+				border-bottom: 2px solid aqua;
+				cursor: pointer;
+			}
+			.newest-body{
+				width: 1140px;
+				height: auto;
+				box-sizing: border-box;
+				margin: 0 auto;
+			}
+			.newest-body-td{
+				width: 292.5px;
+				height: 372.6px;
+				margin: 0 auto;
+			}
+			.body-bottom{
+				margin-top: 160px;
+				width: 100%;
+				height: 1000px;
+			}
+			.body-bottom-blog td{
+				width: 400px;;
+				height: 372.6px;
+			}
+        </style>
+        <title>主页</title>
+    </head>
+    <body>
+       <div class="head">
+            <div class = "head-nav">
+                <div class="container">
+                    <div class="support">
+                        <span>
+                            (+800) 123 456 7890
+                        </span>
+                        <span>
+                            info@website.com
+                        </span>
+                    </div>
+					<div class="m_search">
+						<input type="search" value="Free Shipping on All Orders Over $75!"/>
+					</div>
+                    <div class="control">
+                        <ul>
+                            <li><span>Track Order</span></li>
+                            <li><span class="black-family">_</span></li>
+                            <li><span>Register</span></li>
+                            <li><span class="black-family">_</span></li>
+                            <li><span>Login</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="believe-title">
+            <div class = "believe-mid-content">
+                <div class="leftli">
+                    <ul>
+                        <li><img src="img/logo.png" alt=""></li>
+                        <li><a href="#"><span>HOME</span></a></li>
+                        <li><a href="#"><span>BLOG</span></a></li>
+                        <li><a href="#"><span>BLOG POST</span></a></li>
+                        <li><a href="#"><span>CANTACT</span></a></li>
+                        <li><a href="#"><span>BUY PRO VERSION</span></a></li>
+                    </ul>
+                </div>
+                <div class="rightli">
+                    <ul>
+                        <li><a href="#"><img src="img/srch.png"></a></li>
+                        <li><a href="#"><span>3</span></a></li>
+                        <li><a href="#"><img src="img/pav.png"></a></li>
+                        <li><a href="#"><span>2</span></a></li>
+                        <li><a href="#"><img src="img/bag.png"></a></li>
+                        <li><a href="#"><span>1</span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+       
+       </div>
+       <div class="box">
+            <div class = "box-head">
+				<div class = "box-head-mid">
+					<ul style="margin: 0px;">
+						<li class="box-head-mid-li" style="border-top: 2px solid #66CEF6;"><a href="#">ELECTRONICS</a></li>
+						<li class="box-head-mid-li"><a href="#">MEN </a></li>
+						<li class="box-head-mid-li"><a href="#">WOMEN</a></li>
+						<li class="box-head-mid-li"><a href="#">BABY & KIDS</a></li>
+						<li class="box-head-mid-li"><a href="#">BOOK & MEDIA</a></li>
+						<li class="box-head-mid-li"><a href="#">HOME & KITCHEN</a></li>
+						<li class="box-head-mid-li"><a href="#">MORE STORES</a></li>
+						<li class="box-head-mid-li"><a href="#">OFFERS ZONE</a></li>
+						<li style="display: inline-block"><img src="img/offers.png" alt="off"/></li>
+					</ul>
+				</div>
+            </div>
+            <div class= "box-img">
+                <img src="img/slider-1.jpg" alt="">
+            </div>
+       </div>
+       <div class= "product-promotion">
+			<div class ="product-detail">
+				<div>
+					<img class="product-detail-img" src="img/cat-1.jpg" alt="">
+					<button class="product-detail-bt" style="margin-top: 210px;margin-left: 10px;">BUY NOW</button>
+				</div>
+				<div>
+					<img class="product-detail-img" src="img/cat-2.jpg" alt="">
+					<button class="product-detail-bt" style="margin-top: 190px;margin-left: 150px;">BUY NOW</button>
+				</div>
+				<div>
+					<img class="product-detail-img" src="img/cat-3.jpg" alt="">
+					<button class="product-detail-bt" style="margin-top: 280px;margin-left: 135px;">SHOP NOW</button>
+				</div>
+			</div>
+       </div>
+	   <hr style="border-bottom:1px dashed #000; width:80%;margin: 0 auto;"/>
+       <div class="newest">
+		   <div class="newest-top">
+				<ul >
+					<li class="newest-top-li">FEATURED</li>
+					<li class="newest-top-li">NEW ARRIVALS</li>
+					<li class="newest-top-li">BEST SELLER</li>
+				</ul>
+		   </div>
+		   <div class="newest-body">
+				<table>
+					<tr>
+						<td class="newest-body-td">
+							<center>
+								<img src="img/p-1.jpg" />
+								<span>ADIDAS STRIPED MEN'S ROUND NECK T-SHIRT</span>
+								<br />
+								<br />
+								<p>$19.00 $15.00</p>
+							</center>
+						</td>
+						<td class="newest-body-td">
+							<center>
+								<img src="img/p-2.jpg" />
+								<span>ADIDAS STRIPED MEN'S ROUND NECK T-SHIRT</span>
+								<br />
+								<br />
+								<p>$19.00 $15.00</p>
+							</center>
+						</td>
+						<td class="newest-body-td">
+							<center>
+								<img src="img/p-3.jpg" />
+								<span>ADIDAS STRIPED MEN'S ROUND NECK T-SHIRT</span>
+								<br />
+								<br />
+								<p>$19.00 $15.00</p>
+							</center>
+						</td>
+						<td class="newest-body-td">
+							<center>
+								<img src="img/p-4.jpg" />
+								<span>ADIDAS STRIPED MEN'S ROUND NECK T-SHIRT</span>
+								<br />
+								<br />
+								<p>$19.00 $15.00</p>
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td class="newest-body-td">
+							<img src="img/p-5.jpg" />
+							<span>ADIDAS STRIPED MEN'S ROUND NECK T-SHIRT</span>
+							<br />
+							<br />
+							<p>$19.00 $15.00</p>
+						</td>
+						<td class="newest-body-td">
+							<img src="img/p-6.jpg" />
+							<span>ADIDAS STRIPED MEN'S ROUND NECK T-SHIRT</span>
+							<br />
+							<br />
+							<p>$19.00 $15.00</p>
+						</td>
+						<td class="newest-body-td">
+							<img src="img/p-7.jpg" />
+							<span>ADIDAS STRIPED MEN'S ROUND NECK T-SHIRT</span>
+							<br />
+							<br />
+							<p>$19.00 $15.00</p>
+						</td>
+						<td class="newest-body-td">
+							<img src="img/p-8.jpg" />
+							<span>ADIDAS STRIPED MEN'S ROUND NECK T-SHIRT</span>
+							<br />
+							<br />
+							<p>$19.00 $15.00</p>
+						</td>
+					</tr>
+				</table>
+		   </div>
+		   <div class="body-bottom">
+			   <div style="margin-bottom: 80px;">
+				   <img src="img/bg-offers.jpg" />
+			   </div>
+			   <hr style="border-bottom:1px dashed #000; width:80%;margin: 0 auto;"/>
+			   <div >
+				   <center>
+					   <div style="height: 50px;"></div>
+					   <span style="border-bottom: 2px solid aqua;">BRANDS</span>
+					   <div style="height: 50px;"></div>
+					   <table>
+						   <td><img src="img/brand-1.png"/></td>
+						   <td><img src="img/brand-2.png"/></td>
+						   <td><img src="img/brand-3.png"/></td>
+						   <td><img src="img/brand-4.png"/></td>
+						   <td><img src="img/brand-5.png"/></td>
+					   </table>
+					   <div style="height: 50px;"></div>
+				   </center>
+			   </div>
+			   <hr style="border-bottom:1px dashed #000; width:80%;margin: 0 auto;"/>
+				<div class="body-bottom-blog">
+		   			<center>
+		   				<div style="height: 50px;"></div>
+		   				<span style="border-bottom: 2px solid aqua;">THE BLOG</span>
+		   				<div style="height: 20px;"></div>
+		   				<table>
+							<td>
+								<center>
+									<img src="img/rec-1.jpg"/>
+									<p>VOLUPTATEM ACCUSANTIUM DOLOREMQUE</p>
+									<p>May 11,2014</p>
+								</center>
+							</td>
+							<td>
+								<center>
+									<img src="img/rec-2.jpg"/>
+									<p>VOLUPTATEM ACCUSANTIUM DOLOREMQUE</p>
+									<p>May 11,2014</p>
+								</center>
+								
+							</td>
+							<td>
+								<center>
+									<img src="img/rec-3.jpg"/>
+									<p>VOLUPTATEM ACCUSANTIUM DOLOREMQUE</p>
+									<p>May 11,2014</p>
+								</center>
+								
+							</td>
+		   				</table>
+		   				<div style="height: 50px;"></div>
+		   			</center>
+				</div>
+				<div style="width: 100%; height: 350px;background-color: black;"></div>
+		   </div>
+	   </div>
+    </body>
+</html>
